@@ -1,6 +1,6 @@
-const http = require('http');
+const http = require('http')
 
-const port = process.env.PORT || 3003;
+const port = process.env.PORT || 3003
 
 
 http
@@ -11,6 +11,7 @@ http
             res.end()                      
             } 
 
+            res.writeHead(404, { 'Content-Type': 'text/html' })            
             res.end('The page route doesn\'t exist') 
         })
              
