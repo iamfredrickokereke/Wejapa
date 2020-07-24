@@ -7,7 +7,7 @@ http
     .createServer( (req, res) => {
         if (req.method === 'GET' && req.url === '/') {
             res.writeHead(200, { 'Content-Type' : 'text/html'})              
-            res.write('it works') 
+            res.write('Hello Buddy, Welcome to WeJapa!') 
             res.end()                      
             } 
 
